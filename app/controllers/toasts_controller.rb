@@ -5,11 +5,12 @@ class ToastsController < ApplicationController
   
   def create
     @toast = Toast.new(params[:toast])
+    sleep 2
 
     if @toast.save
-      flash.now[:notice] = "#{@toast.bread} toast!"
+      flash.now[:notice] = "success"
     else
-      flash.now[:notice] = "No toast!"
+      flash.now[:notice] = "error"
     end
   end
 end

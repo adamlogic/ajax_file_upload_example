@@ -1,1 +1,1 @@
-alert('<%= flash[:notice] %>');
+$('#<%= params[:upload_id] %>').find('span').html('(<%= flash[:notice] %>)');
