@@ -78,3 +78,19 @@ a {
   font-size: 12px;
   list-style: disc;
 }
+
+
+.attach_file {
+  display: block;
+  position: relative;
+  width: 30px;
+  overflow: hidden;
+}
+
+.attach_file input {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  opacity: 0;
+}
+

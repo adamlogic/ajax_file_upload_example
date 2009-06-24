@@ -580,3 +580,52 @@ Processing ToastsController#create to js (for 127.0.0.1 at 2009-06-24 12:08:23) 
   [4;36;1mToast Create (19.5ms)[0m   [0;1mINSERT INTO "toasts" ("updated_at", "bread", "created_at") VALUES('2009-06-24 16:08:23', '', '2009-06-24 16:08:23')[0m
 Rendering toasts/create
 Completed in 129ms (View: 23, DB: 20) | 200 OK [http://localhost/toasts]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-24 12:30:27) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (3.0ms)
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-24 12:30:34) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (2.7ms)
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-24 12:31:45) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (3.7ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-24 12:31:47) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (2.8ms)
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-24 12:42:10) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (3.9ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-24 12:46:42) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (3.0ms)
+Completed in 26ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-24 12:50:22) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (2.7ms)
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/]
