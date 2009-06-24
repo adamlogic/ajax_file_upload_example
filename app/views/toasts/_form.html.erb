@@ -1,0 +1,13 @@
+<%= error_messages_for :toast %>
+<% form_for @toast, :html => {:multipart => true} do |f| %>
+  <%= hidden_field_tag :format, 'js' %>
+  <p>
+    <%= f.label :bread %><br />
+    <%= f.text_field :bread %>
+  </p>
+  <p>
+    <%= f.label :photo %><br />
+    <%= f.file_field :photo %>
+  </p>
+  <p><%= f.submit "Push it down" %></p>
+<% end %>

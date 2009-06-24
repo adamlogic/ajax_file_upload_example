@@ -1,0 +1,582 @@
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 08:07:58) [GET]
+
+ActiveRecord::StatementInvalid (Could not find table 'toasts'):
+  app/controllers/toasts_controller.rb:11:in `new'
+  app/controllers/toasts_controller.rb:11:in `new'
+
+Rendered rescues/_trace (122.0ms)
+Rendered rescues/_request_and_response (2.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateToasts (20090615120659)
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCREATE TABLE "toasts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "bread" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090615120659')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("toasts")[0m
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 08:08:08) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (110.0ms)
+Completed in 131ms (View: 125, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 08:08:47) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (3.0ms)
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#create (for 127.0.0.1 at 2009-06-15 08:11:13) [POST]
+  Parameters: {"commit"=>"Push it down", "authenticity_token"=>"pSUgnRaM1V0VJf5ujhY6icIdBnp1+5GrK1kuhbVheP0=", "toast"=>{"bread"=>""}}
+  [4;36;1mToast Create (0.9ms)[0m   [0;1mINSERT INTO "toasts" ("updated_at", "bread", "created_at") VALUES('2009-06-15 12:11:13', '', '2009-06-15 12:11:13')[0m
+
+ActionView::MissingTemplate (Missing template toasts/create.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 08:11:51) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (4.8ms)
+Completed in 31ms (View: 24, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#create (for 127.0.0.1 at 2009-06-15 08:11:52) [POST]
+  Parameters: {"commit"=>"Push it down", "authenticity_token"=>"pSUgnRaM1V0VJf5ujhY6icIdBnp1+5GrK1kuhbVheP0=", "toast"=>{"bread"=>"laksjd"}}
+  [4;36;1mToast Create (0.6ms)[0m   [0;1mINSERT INTO "toasts" ("updated_at", "bread", "created_at") VALUES('2009-06-15 12:11:53', 'laksjd', '2009-06-15 12:11:53')[0m
+
+ActionView::MissingTemplate (Missing template toasts/create.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 08:12:58) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (2.7ms)
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 08:13:00) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (2.4ms)
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#create (for 127.0.0.1 at 2009-06-15 08:13:02) [POST]
+  Parameters: {"commit"=>"Push it down", "authenticity_token"=>"pSUgnRaM1V0VJf5ujhY6icIdBnp1+5GrK1kuhbVheP0=", "toast"=>{"bread"=>""}}
+  [4;35;1mToast Create (0.5ms)[0m   [0mINSERT INTO "toasts" ("updated_at", "bread", "created_at") VALUES('2009-06-15 12:13:02', '', '2009-06-15 12:13:02')[0m
+Rendering toasts/create
+Completed in 17ms (View: 4, DB: 0) | 200 OK [http://localhost/toasts]
+
+
+Processing ToastsController#create (for 127.0.0.1 at 2009-06-15 08:13:04) [POST]
+  Parameters: {"commit"=>"Push it down", "authenticity_token"=>"pSUgnRaM1V0VJf5ujhY6icIdBnp1+5GrK1kuhbVheP0=", "toast"=>{"bread"=>""}}
+  [4;36;1mToast Create (0.5ms)[0m   [0;1mINSERT INTO "toasts" ("updated_at", "bread", "created_at") VALUES('2009-06-15 12:13:04', '', '2009-06-15 12:13:04')[0m
+Rendering toasts/create
+Completed in 14ms (View: 2, DB: 1) | 200 OK [http://localhost/toasts]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 08:13:51) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (2.2ms)
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#create (for 127.0.0.1 at 2009-06-15 08:13:53) [POST]
+  Parameters: {"commit"=>"Push it down", "authenticity_token"=>"pSUgnRaM1V0VJf5ujhY6icIdBnp1+5GrK1kuhbVheP0=", "toast"=>{"bread"=>"asdf"}}
+  [4;35;1mToast Create (0.5ms)[0m   [0mINSERT INTO "toasts" ("updated_at", "bread", "created_at") VALUES('2009-06-15 12:13:53', 'asdf', '2009-06-15 12:13:53')[0m
+Rendering toasts/create
+Completed in 13ms (View: 1, DB: 0) | 200 OK [http://localhost/toasts]
+
+
+Processing ToastsController#create (for 127.0.0.1 at 2009-06-15 08:14:22) [POST]
+  Parameters: {"commit"=>"Push it down", "authenticity_token"=>"pSUgnRaM1V0VJf5ujhY6icIdBnp1+5GrK1kuhbVheP0=", "toast"=>{"bread"=>"asdf"}}
+  [4;36;1mToast Create (0.4ms)[0m   [0;1mINSERT INTO "toasts" ("updated_at", "bread", "created_at") VALUES('2009-06-15 12:14:22', 'asdf', '2009-06-15 12:14:22')[0m
+Rendering toasts/create
+Completed in 17ms (View: 5, DB: 0) | 200 OK [http://localhost/toasts]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 08:16:29) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (3.4ms)
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#create (for 127.0.0.1 at 2009-06-15 08:16:34) [POST]
+  Parameters: {"commit"=>"Push it down", "authenticity_token"=>"pSUgnRaM1V0VJf5ujhY6icIdBnp1+5GrK1kuhbVheP0=", "toast"=>{"photo"=>"", "bread"=>"asdf"}}
+  [4;35;1mToast Create (0.5ms)[0m   [0mINSERT INTO "toasts" ("updated_at", "bread", "created_at") VALUES('2009-06-15 12:16:34', 'asdf', '2009-06-15 12:16:34')[0m
+Rendering toasts/create
+Completed in 14ms (View: 1, DB: 1) | 200 OK [http://localhost/toasts]
+
+
+Processing ToastsController#create (for 127.0.0.1 at 2009-06-15 08:16:51) [POST]
+  Parameters: {"commit"=>"Push it down", "authenticity_token"=>"pSUgnRaM1V0VJf5ujhY6icIdBnp1+5GrK1kuhbVheP0=", "toast"=>{"photo"=>#<File:/var/folders/rO/rOh-n4+NEo8Ed7lCFcLSg++++TI/-Tmp-/RackMultipart.6456.1>, "bread"=>"asdf"}}
+  [4;36;1mToast Create (0.6ms)[0m   [0;1mINSERT INTO "toasts" ("updated_at", "bread", "created_at") VALUES('2009-06-15 12:16:51', 'asdf', '2009-06-15 12:16:51')[0m
+
+ActionView::MissingTemplate (Missing template toasts/create.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 08:17:12) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (137.9ms)
+Completed in 147ms (View: 140, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 08:29:16) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (3.7ms)
+Completed in 18ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#create (for 127.0.0.1 at 2009-06-15 08:29:23) [POST]
+  Parameters: {"commit"=>"Push it down", "authenticity_token"=>"8BmN0oAfn9PcIxpvh5og52mankH4ysPMIV5848r4lHg=", "toast"=>{"bread"=>"rye"}}
+  [4;35;1mToast Create (0.6ms)[0m   [0mINSERT INTO "toasts" ("updated_at", "bread", "created_at") VALUES('2009-06-15 12:29:23', 'rye', '2009-06-15 12:29:23')[0m
+Redirected to http://localhost:3000new
+Completed in 14ms (DB: 1) | 302 Found [http://localhost/toasts]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 08:29:23) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (2.3ms)
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#create (for 127.0.0.1 at 2009-06-15 08:29:26) [POST]
+  Parameters: {"commit"=>"Push it down", "authenticity_token"=>"8BmN0oAfn9PcIxpvh5og52mankH4ysPMIV5848r4lHg=", "toast"=>{"bread"=>"rye"}}
+  [4;36;1mToast Create (0.4ms)[0m   [0;1mINSERT INTO "toasts" ("updated_at", "bread", "created_at") VALUES('2009-06-15 12:29:26', 'rye', '2009-06-15 12:29:26')[0m
+Redirected to http://localhost:3000new
+Completed in 12ms (DB: 0) | 302 Found [http://localhost/toasts]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 08:29:26) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (2.2ms)
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 08:29:40) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (2.3ms)
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#create (for 127.0.0.1 at 2009-06-15 08:29:43) [POST]
+  Parameters: {"commit"=>"Push it down", "authenticity_token"=>"8BmN0oAfn9PcIxpvh5og52mankH4ysPMIV5848r4lHg=", "toast"=>{"bread"=>"rye"}}
+  [4;35;1mToast Create (0.5ms)[0m   [0mINSERT INTO "toasts" ("updated_at", "bread", "created_at") VALUES('2009-06-15 12:29:43', 'rye', '2009-06-15 12:29:43')[0m
+Redirected to http://localhost:3000new
+Completed in 12ms (DB: 0) | 302 Found [http://localhost/toasts]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 08:29:43) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (2.1ms)
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 08:30:18) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (2.4ms)
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#create (for 127.0.0.1 at 2009-06-15 08:30:23) [POST]
+  Parameters: {"commit"=>"Push it down", "authenticity_token"=>"8BmN0oAfn9PcIxpvh5og52mankH4ysPMIV5848r4lHg=", "toast"=>{"bread"=>"white"}}
+  [4;36;1mToast Create (0.5ms)[0m   [0;1mINSERT INTO "toasts" ("updated_at", "bread", "created_at") VALUES('2009-06-15 12:30:23', 'white', '2009-06-15 12:30:23')[0m
+Rendering toasts/create
+Completed in 17ms (View: 4, DB: 1) | 200 OK [http://localhost/toasts]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 08:30:47) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (3.6ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#create (for 127.0.0.1 at 2009-06-15 08:30:55) [POST]
+  Parameters: {"commit"=>"Push it down", "authenticity_token"=>"8BmN0oAfn9PcIxpvh5og52mankH4ysPMIV5848r4lHg=", "toast"=>{"photo"=>"", "bread"=>"wheat"}}
+  [4;35;1mToast Create (0.5ms)[0m   [0mINSERT INTO "toasts" ("updated_at", "bread", "created_at") VALUES('2009-06-15 12:30:55', 'wheat', '2009-06-15 12:30:55')[0m
+Rendering toasts/create
+Completed in 13ms (View: 1, DB: 0) | 200 OK [http://localhost/toasts]
+
+
+Processing ToastsController#create (for 127.0.0.1 at 2009-06-15 08:31:38) [POST]
+  Parameters: {"commit"=>"Push it down", "authenticity_token"=>"8BmN0oAfn9PcIxpvh5og52mankH4ysPMIV5848r4lHg=", "toast"=>{"photo"=>#<File:/var/folders/rO/rOh-n4+NEo8Ed7lCFcLSg++++TI/-Tmp-/RackMultipart.6456.1>, "bread"=>"pumpernickel"}}
+  [4;36;1mToast Create (0.5ms)[0m   [0;1mINSERT INTO "toasts" ("updated_at", "bread", "created_at") VALUES('2009-06-15 12:31:38', 'pumpernickel', '2009-06-15 12:31:38')[0m
+
+ActionView::MissingTemplate (Missing template toasts/create.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 08:31:56) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (2.4ms)
+Completed in 12ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#create (for 127.0.0.1 at 2009-06-15 08:32:04) [POST]
+  Parameters: {"commit"=>"Push it down", "authenticity_token"=>"8BmN0oAfn9PcIxpvh5og52mankH4ysPMIV5848r4lHg=", "toast"=>{"photo"=>#<File:/var/folders/rO/rOh-n4+NEo8Ed7lCFcLSg++++TI/-Tmp-/RackMultipart.6456.3>, "bread"=>"asdf"}}
+  [4;35;1mToast Create (0.5ms)[0m   [0mINSERT INTO "toasts" ("updated_at", "bread", "created_at") VALUES('2009-06-15 12:32:04', 'asdf', '2009-06-15 12:32:04')[0m
+
+ActionView::MissingTemplate (Missing template toasts/create.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 08:33:15) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (4.9ms)
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#create to js (for 127.0.0.1 at 2009-06-15 08:33:26) [POST]
+  Parameters: {"commit"=>"Push it down", "authenticity_token"=>"8BmN0oAfn9PcIxpvh5og52mankH4ysPMIV5848r4lHg=", "toast"=>{"photo"=>#<File:/var/folders/rO/rOh-n4+NEo8Ed7lCFcLSg++++TI/-Tmp-/RackMultipart.6456.5>, "bread"=>"wheat"}}
+  [4;36;1mToast Create (0.6ms)[0m   [0;1mINSERT INTO "toasts" ("updated_at", "bread", "created_at") VALUES('2009-06-15 12:33:26', 'wheat', '2009-06-15 12:33:26')[0m
+Rendering toasts/create
+Completed in 17ms (View: 1, DB: 1) | 200 OK [http://localhost/toasts]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 08:35:41) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (2.5ms)
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#create to js (for 127.0.0.1 at 2009-06-15 08:35:49) [POST]
+  Parameters: {"commit"=>"Push it down", "authenticity_token"=>"8BmN0oAfn9PcIxpvh5og52mankH4ysPMIV5848r4lHg=", "toast"=>{"photo"=>#<File:/var/folders/rO/rOh-n4+NEo8Ed7lCFcLSg++++TI/-Tmp-/RackMultipart.6456.1>, "bread"=>"wheat"}}
+  [4;35;1mToast Create (0.5ms)[0m   [0mINSERT INTO "toasts" ("updated_at", "bread", "created_at") VALUES('2009-06-15 12:35:49', 'wheat', '2009-06-15 12:35:49')[0m
+Rendering toasts/create
+Completed in 18ms (View: 1, DB: 1) | 200 OK [http://localhost/toasts]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 08:36:09) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (2.6ms)
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#create to js (for 127.0.0.1 at 2009-06-15 08:36:15) [POST]
+  Parameters: {"commit"=>"Push it down", "authenticity_token"=>"8BmN0oAfn9PcIxpvh5og52mankH4ysPMIV5848r4lHg=", "toast"=>{"photo"=>#<File:/var/folders/rO/rOh-n4+NEo8Ed7lCFcLSg++++TI/-Tmp-/RackMultipart.6456.3>, "bread"=>"wheat"}}
+  [4;36;1mToast Create (0.6ms)[0m   [0;1mINSERT INTO "toasts" ("updated_at", "bread", "created_at") VALUES('2009-06-15 12:36:15', 'wheat', '2009-06-15 12:36:15')[0m
+Rendering toasts/create
+Completed in 16ms (View: 2, DB: 1) | 200 OK [http://localhost/toasts]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 08:37:25) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (6.3ms)
+Completed in 47ms (View: 34, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#create to js (for 127.0.0.1 at 2009-06-15 08:37:31) [POST]
+  Parameters: {"commit"=>"Push it down", "authenticity_token"=>"8BmN0oAfn9PcIxpvh5og52mankH4ysPMIV5848r4lHg=", "toast"=>{"photo"=>"", "bread"=>"rye"}}
+  [4;36;1mToast Create (0.6ms)[0m   [0;1mINSERT INTO "toasts" ("updated_at", "bread", "created_at") VALUES('2009-06-15 12:37:31', 'rye', '2009-06-15 12:37:31')[0m
+Rendering toasts/create
+Completed in 92ms (View: 4, DB: 1) | 200 OK [http://localhost/toasts]
+
+
+Processing ToastsController#create to js (for 127.0.0.1 at 2009-06-15 08:37:37) [POST]
+  Parameters: {"commit"=>"Push it down", "authenticity_token"=>"8BmN0oAfn9PcIxpvh5og52mankH4ysPMIV5848r4lHg=", "toast"=>{"photo"=>#<File:/var/folders/rO/rOh-n4+NEo8Ed7lCFcLSg++++TI/-Tmp-/RackMultipart.6628.1>, "bread"=>"rye"}}
+  [4;35;1mToast Create (0.5ms)[0m   [0mINSERT INTO "toasts" ("updated_at", "bread", "created_at") VALUES('2009-06-15 12:37:37', 'rye', '2009-06-15 12:37:37')[0m
+Rendering toasts/create
+Completed in 15ms (View: 1, DB: 0) | 200 OK [http://localhost/toasts]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 08:46:50) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (3.2ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#create (for 127.0.0.1 at 2009-06-15 08:56:13) [POST]
+  Parameters: {"commit"=>"Push it down", "authenticity_token"=>"8BmN0oAfn9PcIxpvh5og52mankH4ysPMIV5848r4lHg=", "toast"=>{"bread"=>"wheat"}}
+  [4;36;1mToast Create (0.6ms)[0m   [0;1mINSERT INTO "toasts" ("updated_at", "bread", "created_at") VALUES('2009-06-15 12:56:13', 'wheat', '2009-06-15 12:56:13')[0m
+Redirected to http://localhost:3000new
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/toasts]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 08:56:13) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (2.3ms)
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 08:58:12) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (2.3ms)
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#create (for 127.0.0.1 at 2009-06-15 08:58:15) [POST]
+  Parameters: {"commit"=>"Push it down", "authenticity_token"=>"8BmN0oAfn9PcIxpvh5og52mankH4ysPMIV5848r4lHg=", "toast"=>{"bread"=>"rye"}}
+  [4;35;1mToast Create (0.5ms)[0m   [0mINSERT INTO "toasts" ("updated_at", "bread", "created_at") VALUES('2009-06-15 12:58:15', 'rye', '2009-06-15 12:58:15')[0m
+Rendering toasts/create
+Completed in 17ms (View: 5, DB: 0) | 200 OK [http://localhost/toasts]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 09:08:55) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (2.3ms)
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#create (for 127.0.0.1 at 2009-06-15 09:09:46) [POST]
+  Parameters: {"commit"=>"Push it down", "authenticity_token"=>"8BmN0oAfn9PcIxpvh5og52mankH4ysPMIV5848r4lHg=", "toast"=>{"bread"=>"wheat"}}
+  [4;36;1mToast Create (0.7ms)[0m   [0;1mINSERT INTO "toasts" ("updated_at", "bread", "created_at") VALUES('2009-06-15 13:09:46', 'wheat', '2009-06-15 13:09:46')[0m
+Rendering toasts/create
+Completed in 17ms (View: 1, DB: 1) | 200 OK [http://localhost/toasts]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 09:11:14) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (4.6ms)
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#create (for 127.0.0.1 at 2009-06-15 09:11:21) [POST]
+  Parameters: {"commit"=>"Push it down", "authenticity_token"=>"8BmN0oAfn9PcIxpvh5og52mankH4ysPMIV5848r4lHg=", "toast"=>{"bread"=>"rye"}}
+  [4;35;1mToast Create (0.5ms)[0m   [0mINSERT INTO "toasts" ("updated_at", "bread", "created_at") VALUES('2009-06-15 13:11:21', 'rye', '2009-06-15 13:11:21')[0m
+Redirected to http://localhost:3000new
+Completed in 12ms (DB: 0) | 302 Found [http://localhost/toasts]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 09:11:22) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (2.4ms)
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 09:13:31) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (2.5ms)
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#create (for 127.0.0.1 at 2009-06-15 09:13:34) [POST]
+  Parameters: {"commit"=>"Push it down", "authenticity_token"=>"8BmN0oAfn9PcIxpvh5og52mankH4ysPMIV5848r4lHg=", "toast"=>{"bread"=>"rye"}}
+  [4;36;1mToast Create (0.9ms)[0m   [0;1mINSERT INTO "toasts" ("updated_at", "bread", "created_at") VALUES('2009-06-15 13:13:34', 'rye', '2009-06-15 13:13:34')[0m
+Rendering toasts/create
+Completed in 18ms (View: 4, DB: 1) | 200 OK [http://localhost/toasts]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 09:14:17) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (3.8ms)
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#create (for 127.0.0.1 at 2009-06-15 09:14:32) [POST]
+  Parameters: {"commit"=>"Push it down", "authenticity_token"=>"8BmN0oAfn9PcIxpvh5og52mankH4ysPMIV5848r4lHg=", "toast"=>{"photo"=>"", "bread"=>"wheat"}}
+  [4;35;1mToast Create (0.5ms)[0m   [0mINSERT INTO "toasts" ("updated_at", "bread", "created_at") VALUES('2009-06-15 13:14:32', 'wheat', '2009-06-15 13:14:32')[0m
+Rendering toasts/create
+Completed in 16ms (View: 1, DB: 1) | 200 OK [http://localhost/toasts]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 09:14:50) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (2.6ms)
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#create (for 127.0.0.1 at 2009-06-15 09:15:00) [POST]
+  Parameters: {"commit"=>"Push it down", "authenticity_token"=>"8BmN0oAfn9PcIxpvh5og52mankH4ysPMIV5848r4lHg=", "toast"=>{"photo"=>#<File:/var/folders/rO/rOh-n4+NEo8Ed7lCFcLSg++++TI/-Tmp-/RackMultipart.6628.1>, "bread"=>"rye"}}
+  [4;36;1mToast Create (0.5ms)[0m   [0;1mINSERT INTO "toasts" ("updated_at", "bread", "created_at") VALUES('2009-06-15 13:15:00', 'rye', '2009-06-15 13:15:00')[0m
+
+ActionView::MissingTemplate (Missing template toasts/create.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 09:16:46) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (3.7ms)
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#create to js (for 127.0.0.1 at 2009-06-15 09:16:56) [POST]
+  Parameters: {"commit"=>"Push it down", "authenticity_token"=>"8BmN0oAfn9PcIxpvh5og52mankH4ysPMIV5848r4lHg=", "toast"=>{"photo"=>#<File:/var/folders/rO/rOh-n4+NEo8Ed7lCFcLSg++++TI/-Tmp-/RackMultipart.6628.3>, "bread"=>"white"}}
+  [4;35;1mToast Create (0.5ms)[0m   [0mINSERT INTO "toasts" ("updated_at", "bread", "created_at") VALUES('2009-06-15 13:16:57', 'white', '2009-06-15 13:16:57')[0m
+Rendering toasts/create
+Completed in 99ms (View: 1, DB: 0) | 200 OK [http://localhost/toasts]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 09:17:59) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (4.5ms)
+Completed in 30ms (View: 24, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#create (for 127.0.0.1 at 2009-06-15 09:18:49) [POST]
+  Parameters: {"commit"=>"Push it down", "authenticity_token"=>"8BmN0oAfn9PcIxpvh5og52mankH4ysPMIV5848r4lHg=", "toast"=>{"bread"=>"wheat"}}
+  [4;36;1mToast Create (0.7ms)[0m   [0;1mINSERT INTO "toasts" ("updated_at", "bread", "created_at") VALUES('2009-06-15 13:18:49', 'wheat', '2009-06-15 13:18:49')[0m
+Redirected to http://localhost:3000new
+Completed in 39ms (DB: 1) | 302 Found [http://localhost/toasts]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 09:18:50) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (2.3ms)
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 09:20:42) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (2.5ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#create (for 127.0.0.1 at 2009-06-15 09:20:45) [POST]
+  Parameters: {"commit"=>"Push it down", "authenticity_token"=>"8BmN0oAfn9PcIxpvh5og52mankH4ysPMIV5848r4lHg=", "toast"=>{"bread"=>"rye"}}
+  [4;35;1mToast Create (0.5ms)[0m   [0mINSERT INTO "toasts" ("updated_at", "bread", "created_at") VALUES('2009-06-15 13:20:45', 'rye', '2009-06-15 13:20:45')[0m
+Rendering toasts/create
+Completed in 18ms (View: 5, DB: 0) | 200 OK [http://localhost/toasts]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 09:21:25) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (4.7ms)
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#create (for 127.0.0.1 at 2009-06-15 09:21:31) [POST]
+  Parameters: {"commit"=>"Push it down", "authenticity_token"=>"8BmN0oAfn9PcIxpvh5og52mankH4ysPMIV5848r4lHg=", "toast"=>{"photo"=>"", "bread"=>"wheat"}}
+  [4;36;1mToast Create (0.5ms)[0m   [0;1mINSERT INTO "toasts" ("updated_at", "bread", "created_at") VALUES('2009-06-15 13:21:31', 'wheat', '2009-06-15 13:21:31')[0m
+Rendering toasts/create
+Completed in 13ms (View: 1, DB: 0) | 200 OK [http://localhost/toasts]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 09:21:35) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (2.6ms)
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#create (for 127.0.0.1 at 2009-06-15 09:21:43) [POST]
+  Parameters: {"commit"=>"Push it down", "authenticity_token"=>"8BmN0oAfn9PcIxpvh5og52mankH4ysPMIV5848r4lHg=", "toast"=>{"photo"=>#<File:/var/folders/rO/rOh-n4+NEo8Ed7lCFcLSg++++TI/-Tmp-/RackMultipart.6859.1>, "bread"=>"white"}}
+  [4;35;1mToast Create (0.6ms)[0m   [0mINSERT INTO "toasts" ("updated_at", "bread", "created_at") VALUES('2009-06-15 13:21:43', 'white', '2009-06-15 13:21:43')[0m
+
+ActionView::MissingTemplate (Missing template toasts/create.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 09:23:28) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (4.7ms)
+Completed in 17ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#create to js (for 127.0.0.1 at 2009-06-15 09:23:35) [POST]
+  Parameters: {"commit"=>"Push it down", "authenticity_token"=>"8BmN0oAfn9PcIxpvh5og52mankH4ysPMIV5848r4lHg=", "toast"=>{"photo"=>#<File:/var/folders/rO/rOh-n4+NEo8Ed7lCFcLSg++++TI/-Tmp-/RackMultipart.6859.3>, "bread"=>"wheat"}}
+  [4;36;1mToast Create (0.5ms)[0m   [0;1mINSERT INTO "toasts" ("updated_at", "bread", "created_at") VALUES('2009-06-15 13:23:35', 'wheat', '2009-06-15 13:23:35')[0m
+Rendering toasts/create
+Completed in 100ms (View: 2, DB: 0) | 200 OK [http://localhost/toasts]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 09:25:31) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (2.6ms)
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#create to js (for 127.0.0.1 at 2009-06-15 09:25:38) [POST]
+  Parameters: {"commit"=>"Push it down", "authenticity_token"=>"8BmN0oAfn9PcIxpvh5og52mankH4ysPMIV5848r4lHg=", "toast"=>{"photo"=>#<File:/var/folders/rO/rOh-n4+NEo8Ed7lCFcLSg++++TI/-Tmp-/RackMultipart.6859.1>, "bread"=>"wheat"}}
+  [4;35;1mToast Create (0.5ms)[0m   [0mINSERT INTO "toasts" ("updated_at", "bread", "created_at") VALUES('2009-06-15 13:25:38', 'wheat', '2009-06-15 13:25:38')[0m
+Rendering toasts/create
+Completed in 15ms (View: 1, DB: 1) | 200 OK [http://localhost/toasts]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-15 09:27:07) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (5.3ms)
+Completed in 31ms (View: 25, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#create to js (for 127.0.0.1 at 2009-06-15 09:27:14) [POST]
+  Parameters: {"commit"=>"Push it down", "authenticity_token"=>"8BmN0oAfn9PcIxpvh5og52mankH4ysPMIV5848r4lHg=", "toast"=>{"photo"=>#<File:/var/folders/rO/rOh-n4+NEo8Ed7lCFcLSg++++TI/-Tmp-/RackMultipart.6948.1>, "bread"=>"rye"}}
+  [4;36;1mToast Create (0.6ms)[0m   [0;1mINSERT INTO "toasts" ("updated_at", "bread", "created_at") VALUES('2009-06-15 13:27:14', 'rye', '2009-06-15 13:27:14')[0m
+Rendering toasts/create
+Completed in 29ms (View: 4, DB: 1) | 200 OK [http://localhost/toasts]
+
+
+Processing ToastsController#new (for 127.0.0.1 at 2009-06-24 12:08:07) [GET]
+Rendering template within layouts/application
+Rendering toasts/new
+Rendered toasts/_form (175.8ms)
+Completed in 414ms (View: 379, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ToastsController#create to js (for 127.0.0.1 at 2009-06-24 12:08:23) [POST]
+  Parameters: {"commit"=>"Push it down", "authenticity_token"=>"+zg/SqneKtm6y/ZTCJ1feud8npwqdxw+qOyaO5/EWU8=", "toast"=>{"photo"=>#<File:/var/folders/rO/rOh-n4+NEo8Ed7lCFcLSg++++TI/-Tmp-/RackMultipart.704.1>, "bread"=>""}}
+  [4;36;1mToast Create (19.5ms)[0m   [0;1mINSERT INTO "toasts" ("updated_at", "bread", "created_at") VALUES('2009-06-24 16:08:23', '', '2009-06-24 16:08:23')[0m
+Rendering toasts/create
+Completed in 129ms (View: 23, DB: 20) | 200 OK [http://localhost/toasts]

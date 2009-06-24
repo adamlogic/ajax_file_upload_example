@@ -1,0 +1,2 @@
+module ToastsHelper
+end

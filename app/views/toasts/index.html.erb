@@ -1,0 +1,17 @@
+<% title "Toasts" %>
+
+<table>
+  <tr>
+    <th>Bread</th>
+  </tr>
+  <% for toast in @toasts %>
+    <tr>
+      <td><%=h toast.bread %></td>
+      <td><%= link_to "Show", toast %></td>
+      <td><%= link_to "Edit", edit_toast_path(toast) %></td>
+      <td><%= link_to "Destroy", toast, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Toast", new_toast_path %></p>
